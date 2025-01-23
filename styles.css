@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Iosevka Matsuri';
+    src: url('./fonts/IosevkaMatsuri-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Symbols Nerd';
+    src: url('./fonts/SymbolsNerdFontMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Iosevka Matsuri', 'Symbols Nerd', sans-serif;
+    background-color: #0A1114; /* Background */
+    color: #dadada; /* White (Foreground) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    text-align: center;
+}
+
+/* Image */
+.image-container img {
+    width: 40em;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(5, 10, 12, 1);
+}
+
+/* Heading and Date */
+.content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #c47fd5; /* Magenta */
+}
+
+#datetime {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #67b0e8; /* Blue */
+}
+
+/* Links Section */
+.links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.links div {
+    margin: 10px;
+}
+
+.links h2 {
+    font-size: 1.5rem;
+    color: #e5c76b; /* Yellow */
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 5px 0;
+}
+
+.links a {
+    color: #8ccf7e; /* Green */
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Add lighter background to sections */
+.links div {
+    background-color: #141B1E; /* Lighter Background */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Smooth Transitions */
+a {
+    transition: color 0.2s ease-in-out;
+}
+
